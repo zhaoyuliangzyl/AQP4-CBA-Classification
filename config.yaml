@@ -1,0 +1,95 @@
+# AQP4 CBA Classification Configuration
+
+# Data Configuration
+data:
+  data_dir: "data"
+  negative_dir: "data/negative"
+  positive_dir: "data/positive"
+  train_split: 0.8
+  val_split: 0.1
+  test_split: 0.1
+  seed: 42
+
+# Image Configuration
+image:
+  original_size: [2448, 2048]  # H x W
+  patch_size: 512  # Patch size for MIL (multiple instance learning)
+  patch_stride: 256  # Stride between patches
+  resize_size: 512  # Resize each patch to this size for model input
+  num_patches_max: 16  # Maximum patches per image
+
+# Data Augmentation
+augmentation:
+  enable: true
+  random_flip: true
+  random_rotation: 15  # degrees
+  random_brightness: 0.2
+  random_contrast: 0.2
+  random_saturation: 0.2
+  gaussian_blur: true
+  random_crop: true
+
+# Model Configuration
+model:
+  backbone: "resnet50"  # Options: resnet50, resnet101, efficientnet_b0, efficientnet_b1
+  pretrained: true
+  num_classes: 2
+  dropout: 0.3
+  use_attention: true
+  attention_dim: 256
+
+# Training Configuration
+training:
+  batch_size: 8
+  learning_rate: 0.001
+  weight_decay: 1e-5
+  num_epochs: 100
+  warmup_epochs: 5
+  scheduler: "cosine"  # Options: cosine, linear, exponential
+  
+  # Loss function
+  loss: "focal"  # Options: "ce" (cross-entropy), "focal", "weighted_ce"
+  focal_alpha: 0.25
+  focal_gamma: 2.0
+  
+  # Class weight for imbalanced data
+  use_class_weights: true
+  negative_weight: 1.0
+  positive_weight: 1.69  # 169/100 ≈ 1.69
+  
+  # Optimization
+  optimizer: "adamw"
+  gradient_clip: 1.0
+
+# Validation and Testing
+validation:
+  eval_interval: 5  # Evaluate every N epochs
+  early_stopping_patience: 20
+  early_stopping_metric: "val_auc"  # Options: val_loss, val_auc, val_f1
+
+# Multiple Instance Learning (MIL)
+mil:
+  enable: true
+  aggregation: "attention"  # Options: "mean", "max", "attention"
+  top_k: 5  # For top-k pooling
+  use_mil_loss: true
+  mil_loss_weight: 0.1
+
+# Device Configuration
+device:
+  cuda: true
+  num_workers: 4
+  pin_memory: true
+
+# Logging and Checkpointing
+logging:
+  output_dir: "outputs"
+  checkpoint_dir: "outputs/checkpoints"
+  log_dir: "outputs/logs"
+  save_interval: 5
+  log_interval: 50
+
+# Inference Configuration
+inference:
+  model_path: "outputs/checkpoints/best_model.pth"
+  confidence_threshold: 0.5
