@@ -1,6 +1,6 @@
 """
 AQP4 CBA Classification Model
-Includes backbone networks with attention mechanism for medical image classification
+Includes backbone networks with attention mechanism
 """
 
 import torch

@@ -100,10 +100,7 @@ python inference.py --config config.yaml \
 
 **Batch Prediction:**
 ```bash
-python inference.py --config config.yaml \
-                   --model outputs/checkpoints/best_model.pth \
-                   --image-dir path/to/image/directory \
-                   --output results.json
+python inference.py --config config.yaml --model outputs/checkpoints/best_model.pth --image-dir test_images --output results.json
 ```
 
 ## Configuration

@@ -88,7 +88,7 @@ class AQP4MILDataset(Dataset):
                 A.VerticalFlip(p=0.5),
                 A.Rotate(limit=15, p=0.5),
                 A.RandomBrightnessContrast(brightness_limit=0.2, contrast_limit=0.2, p=0.5),
-                A.GaussBlur(blur_limit=3, p=0.3),
+                A.GlassBlur(p=0.3),
                 A.Normalize(mean=[0.485, 0.456, 0.406],
                            std=[0.229, 0.224, 0.225]) if normalize else A.Normalize(),
                 ToTensorV2(),
@@ -108,7 +108,8 @@ class AQP4MILDataset(Dataset):
         image_path = self.image_paths[idx]
         label = self.labels[idx]
         
-        image = cv2.imread(image_path)
+        #image = cv2.imread(image_path)
+        image = cv2.imdecode(np.fromfile(image_path, dtype=np.uint8), cv2.IMREAD_COLOR)
         if image is None:
             raise ValueError(f"Cannot load image: {image_path}")
         image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
