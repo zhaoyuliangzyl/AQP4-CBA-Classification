@@ -235,6 +235,9 @@ def main():
     print(f"Device: {device}")
     
     logger = setup_logging(config.get('logging', {}).get('log_dir', 'outputs/logs'))
+
+    augment_config = config.get('augmentation', {})
+    logger.info("Augmentation config (active):\n%s", yaml.safe_dump(augment_config, sort_keys=False))
     
     negative_dir = os.path.join(args.data_dir, 'negative')
     positive_dir = os.path.join(args.data_dir, 'positive')
