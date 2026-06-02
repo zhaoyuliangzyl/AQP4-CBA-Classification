@@ -79,12 +79,20 @@ python train.py --config config.yaml --data-dir data --device cuda
 
 # Or train with MIL model (uncomment in config.yaml: mil.enable: true)
 python train.py --config config.yaml --data-dir data --device cuda
+
+# Multi-GPU training (recommended)
+torchrun --nproc_per_node=5 train.py --gpus 1,2,3,5,6 --config config.yaml --data-dir data --device cuda --distributed
 ```
 
 ### 3. Evaluate
 
 ```bash
 python evaluate.py --config config.yaml \
+                   --model outputs/checkpoints/best_model.pth \
+                   --data-dir data
+
+# Select GPU (example: only GPU 0)
+CUDA_VISIBLE_DEVICES=0 python evaluate.py --config config.yaml \
                    --model outputs/checkpoints/best_model.pth \
                    --data-dir data
 ```
@@ -96,11 +104,19 @@ python evaluate.py --config config.yaml \
 python inference.py --config config.yaml \
                    --model outputs/checkpoints/best_model.pth \
                    --image path/to/image.jpg
+
+# Select GPU (example: only GPU 1)
+CUDA_VISIBLE_DEVICES=1 python inference.py --config config.yaml \
+                   --model outputs/checkpoints/best_model.pth \
+                   --image path/to/image.jpg
 ```
 
 **Batch Prediction:**
 ```bash
 python inference.py --config config.yaml --model outputs/checkpoints/best_model.pth --image-dir test_images --output results.json
+
+# Select GPU (example: GPU 2 and 3 are visible, inference uses the first visible GPU)
+CUDA_VISIBLE_DEVICES=2,3 python inference.py --config config.yaml --model outputs/checkpoints/best_model.pth --image-dir test_images --output results.json
 ```
 
 ## Configuration

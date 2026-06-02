@@ -157,8 +157,14 @@ def main():
     parser.add_argument('--data-dir', type=str, default='data')
     parser.add_argument('--device', type=str, default='cuda')
     parser.add_argument('--output-dir', type=str, default='outputs/evaluation')
+    parser.add_argument('--gpus', type=str, default=None, help='Comma-separated GPU ids, e.g. 0,2')
     
     args = parser.parse_args()
+
+    if args.gpus:
+        normalized = ','.join([item.strip() for item in args.gpus.split(',') if item.strip()])
+        if normalized:
+            os.environ['CUDA_VISIBLE_DEVICES'] = normalized
     
     with open(args.config, 'r', encoding='utf-8') as f:
         config = yaml.safe_load(f)

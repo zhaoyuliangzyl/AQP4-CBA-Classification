@@ -37,3 +37,23 @@
 已在 `train.py` 中添加了**启动时打印当前激活的增强配置**的功能，这样你在训练开始时就能立即确认设置是否正确。
 
 如果你也希望在**评估（evaluation）** 或**推理（inference）** 运行时也打印同样的配置日志，请告诉我，我会在那里也同步添加。
+
+# 2026-06-02
+
+已把训练脚本改成可在多卡服务器上跑的 DDP 方案，并让数据加载器在分布式场景下自动使用 `DistributedSampler`。另外补了多卡启动示例到 README。
+
+涉及文件：
+- 分布式初始化、DDP 包装、跨卡指标聚合、只在主进程写日志和保存模型：train.py
+- 分布式采样器支持：dataset.py
+- 多卡启动示例：README.md、README_CN.md
+
+你可以这样启动多卡：
+```bash
+torchrun --nproc_per_node=4 train.py --config config.yaml --data-dir data --device cuda --distributed
+```
+
+需要我顺便加上 `--nproc_per_node` 自动读取、或者支持多机多卡参数（如 `--nnodes` / `--node_rank`）吗？
+
+已加上 --gpus 参数，会自动设置 CUDA_VISIBLE_DEVICES。改动在 train.py。
+
+如果你还想支持 --gpus auto（按空闲显存挑卡），我也可以补上。

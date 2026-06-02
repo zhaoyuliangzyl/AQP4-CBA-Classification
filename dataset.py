@@ -11,7 +11,7 @@ from albumentations.pytorch import ToTensorV2
 import cv2
 
 import torch
-from torch.utils.data import Dataset, DataLoader
+from torch.utils.data import Dataset, DataLoader, DistributedSampler
 
 
 class AQP4BaselineDataset(Dataset):
@@ -327,7 +327,11 @@ def create_data_split(negative_dir: str, positive_dir: str,
 
 
 def create_dataloaders(negative_dir: str, positive_dir: str, config: dict,
-                      model_type: str = "baseline") -> Tuple[DataLoader, DataLoader, DataLoader]:
+                      model_type: str = "baseline",
+                      distributed: bool = False,
+                      rank: int = 0,
+                      world_size: int = 1,
+                      seed: int = 42) -> Tuple[DataLoader, DataLoader, DataLoader]:
     """Create train/val/test dataloaders"""
     data_config = config.get('data', {})
     image_config = config.get('image', {})
@@ -397,17 +401,55 @@ def create_dataloaders(negative_dir: str, positive_dir: str, config: dict,
             normalize=True
         )
     
+    train_sampler = None
+    val_sampler = None
+    test_sampler = None
+    if distributed:
+        train_sampler = DistributedSampler(
+            train_dataset,
+            num_replicas=world_size,
+            rank=rank,
+            shuffle=True,
+            seed=seed
+        )
+        val_sampler = DistributedSampler(
+            val_dataset,
+            num_replicas=world_size,
+            rank=rank,
+            shuffle=False,
+            seed=seed
+        )
+        test_sampler = DistributedSampler(
+            test_dataset,
+            num_replicas=world_size,
+            rank=rank,
+            shuffle=False,
+            seed=seed
+        )
+
     train_loader = DataLoader(
-        train_dataset, batch_size=batch_size, shuffle=True,
-        num_workers=num_workers, pin_memory=pin_memory
+        train_dataset,
+        batch_size=batch_size,
+        shuffle=train_sampler is None,
+        sampler=train_sampler,
+        num_workers=num_workers,
+        pin_memory=pin_memory
     )
     val_loader = DataLoader(
-        val_dataset, batch_size=batch_size, shuffle=False,
-        num_workers=num_workers, pin_memory=pin_memory
+        val_dataset,
+        batch_size=batch_size,
+        shuffle=False,
+        sampler=val_sampler,
+        num_workers=num_workers,
+        pin_memory=pin_memory
     )
     test_loader = DataLoader(
-        test_dataset, batch_size=batch_size, shuffle=False,
-        num_workers=num_workers, pin_memory=pin_memory
+        test_dataset,
+        batch_size=batch_size,
+        shuffle=False,
+        sampler=test_sampler,
+        num_workers=num_workers,
+        pin_memory=pin_memory
     )
     
     return train_loader, val_loader, test_loader

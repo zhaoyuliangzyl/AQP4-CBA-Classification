@@ -1,614 +1,542 @@
 {
-  "20251225016.jpg": {
+  "AQP4-2\udcb0\udce5-G6-S-3-4.jpg": {
     "label": 1,
     "label_name": "positive",
-    "confidence": 1.0,
+    "confidence": 0.5923857688903809,
     "probabilities": {
-      "negative": 8.703724071641743e-35,
-      "positive": 1.0
+      "negative": 0.40761423110961914,
+      "positive": 0.5923857688903809
     }
   },
-  "20251225043.jpg": {
-    "label": 1,
-    "label_name": "positive",
-    "confidence": 0.7950491905212402,
-    "probabilities": {
-      "negative": 0.20495077967643738,
-      "positive": 0.7950491905212402
-    }
-  },
-  "20251225052.jpg": {
+  "AQP4-2\udcb0\udce5-D10-S-3-3.jpg": {
     "label": 0,
     "label_name": "negative",
-    "confidence": 0.840157151222229,
+    "confidence": 0.7261339426040649,
     "probabilities": {
-      "negative": 0.840157151222229,
-      "positive": 0.1598428636789322
+      "negative": 0.7261339426040649,
+      "positive": 0.27386605739593506
     }
   },
-  "20251225061.jpg": {
+  "AQP4-2\udcb0\udce5-B2-S-3-1.jpg": {
+    "label": 1,
+    "label_name": "positive",
+    "confidence": 0.9530413746833801,
+    "probabilities": {
+      "negative": 0.04695860296487808,
+      "positive": 0.9530413746833801
+    }
+  },
+  "AQP4-2\udcb0\udce5-D11-S-3-3.jpg": {
+    "label": 1,
+    "label_name": "positive",
+    "confidence": 0.5771925449371338,
+    "probabilities": {
+      "negative": 0.4228074252605438,
+      "positive": 0.5771925449371338
+    }
+  },
+  "AQP4-2\udcb0\udce5-B2-S-3-3.jpg": {
+    "label": 1,
+    "label_name": "positive",
+    "confidence": 0.9776015281677246,
+    "probabilities": {
+      "negative": 0.02239852026104927,
+      "positive": 0.9776015281677246
+    }
+  },
+  "AQP4-2\udcb0\udce5-F12-S-3-4.jpg": {
+    "label": 1,
+    "label_name": "positive",
+    "confidence": 0.7410898804664612,
+    "probabilities": {
+      "negative": 0.25891008973121643,
+      "positive": 0.7410898804664612
+    }
+  },
+  "AQP4-2\udcb0\udce5-G6-S-3-5.jpg": {
     "label": 0,
     "label_name": "negative",
-    "confidence": 0.9587705135345459,
+    "confidence": 0.60768723487854,
     "probabilities": {
-      "negative": 0.9587705135345459,
-      "positive": 0.041229527443647385
+      "negative": 0.60768723487854,
+      "positive": 0.39231276512145996
     }
   },
-  "20251225070.jpg": {
-    "label": 0,
-    "label_name": "negative",
-    "confidence": 0.9867478609085083,
-    "probabilities": {
-      "negative": 0.9867478609085083,
-      "positive": 0.013252083212137222
-    }
-  },
-  "20251225079.jpg": {
-    "label": 0,
-    "label_name": "negative",
-    "confidence": 0.9846159815788269,
-    "probabilities": {
-      "negative": 0.9846159815788269,
-      "positive": 0.015384008176624775
-    }
-  },
-  "20251225088.jpg": {
-    "label": 0,
-    "label_name": "negative",
-    "confidence": 0.9702841639518738,
-    "probabilities": {
-      "negative": 0.9702841639518738,
-      "positive": 0.02971586212515831
-    }
-  },
-  "20251225097.jpg": {
-    "label": 0,
-    "label_name": "negative",
-    "confidence": 0.9823843836784363,
-    "probabilities": {
-      "negative": 0.9823843836784363,
-      "positive": 0.017615625634789467
-    }
-  },
-  "AQP4-1\uff1a10-3.jpg": {
+  "AQP4-\udcd2\udcf5\udcd0\udcd4-3.jpg": {
     "label": 1,
     "label_name": "positive",
-    "confidence": 0.9999861717224121,
+    "confidence": 0.6002190113067627,
     "probabilities": {
-      "negative": 1.3835643585480284e-05,
-      "positive": 0.9999861717224121
-    }
-  },
-  "AQP4-1\uff1a32-3.jpg": {
-    "label": 1,
-    "label_name": "positive",
-    "confidence": 0.6412920355796814,
-    "probabilities": {
-      "negative": 0.358707994222641,
-      "positive": 0.6412920355796814
-    }
-  },
-  "AQP4-1\uff1a320-3.jpg": {
-    "label": 1,
-    "label_name": "positive",
-    "confidence": 1.0,
-    "probabilities": {
-      "negative": 1.7697867097602599e-13,
-      "positive": 1.0
-    }
-  },
-  "AQP4-2\u677f-B2-S-3-1.jpg": {
-    "label": 1,
-    "label_name": "positive",
-    "confidence": 0.82717365026474,
-    "probabilities": {
-      "negative": 0.17282631993293762,
-      "positive": 0.82717365026474
-    }
-  },
-  "AQP4-2\u677f-B2-S-3-2.jpg": {
-    "label": 1,
-    "label_name": "positive",
-    "confidence": 0.9820261597633362,
-    "probabilities": {
-      "negative": 0.01797381602227688,
-      "positive": 0.9820261597633362
-    }
-  },
-  "AQP4-2\u677f-B2-S-3-3.jpg": {
-    "label": 1,
-    "label_name": "positive",
-    "confidence": 0.9676935076713562,
-    "probabilities": {
-      "negative": 0.032306451350450516,
-      "positive": 0.9676935076713562
-    }
-  },
-  "AQP4-2\u677f-B2-S-3-4.jpg": {
-    "label": 1,
-    "label_name": "positive",
-    "confidence": 0.9955542683601379,
-    "probabilities": {
-      "negative": 0.004445692058652639,
-      "positive": 0.9955542683601379
-    }
-  },
-  "AQP4-2\u677f-B2-S-3-5.jpg": {
-    "label": 1,
-    "label_name": "positive",
-    "confidence": 0.9983475208282471,
-    "probabilities": {
-      "negative": 0.0016524697421118617,
-      "positive": 0.9983475208282471
-    }
-  },
-  "AQP4-2\u677f-C4-S-3-1.jpg": {
-    "label": 1,
-    "label_name": "positive",
-    "confidence": 0.9854362607002258,
-    "probabilities": {
-      "negative": 0.01456370484083891,
-      "positive": 0.9854362607002258
-    }
-  },
-  "AQP4-2\u677f-C4-S-3-2.jpg": {
-    "label": 1,
-    "label_name": "positive",
-    "confidence": 0.9929903745651245,
-    "probabilities": {
-      "negative": 0.007009614259004593,
-      "positive": 0.9929903745651245
-    }
-  },
-  "AQP4-2\u677f-C4-S-3-3.jpg": {
-    "label": 1,
-    "label_name": "positive",
-    "confidence": 0.9780057072639465,
-    "probabilities": {
-      "negative": 0.021994290873408318,
-      "positive": 0.9780057072639465
-    }
-  },
-  "AQP4-2\u677f-C4-S-3-4.jpg": {
-    "label": 1,
-    "label_name": "positive",
-    "confidence": 0.9918930530548096,
-    "probabilities": {
-      "negative": 0.00810698326677084,
-      "positive": 0.9918930530548096
-    }
-  },
-  "AQP4-2\u677f-C4-S-3-5.jpg": {
-    "label": 1,
-    "label_name": "positive",
-    "confidence": 0.9994563460350037,
-    "probabilities": {
-      "negative": 0.0005437155487015843,
-      "positive": 0.9994563460350037
-    }
-  },
-  "AQP4-2\u677f-D10-S-3-1.jpg": {
-    "label": 1,
-    "label_name": "positive",
-    "confidence": 0.9953763484954834,
-    "probabilities": {
-      "negative": 0.00462359981611371,
-      "positive": 0.9953763484954834
-    }
-  },
-  "AQP4-2\u677f-D10-S-3-2.jpg": {
-    "label": 1,
-    "label_name": "positive",
-    "confidence": 1.0,
-    "probabilities": {
-      "negative": 2.739543170093839e-08,
-      "positive": 1.0
-    }
-  },
-  "AQP4-2\u677f-D10-S-3-3.jpg": {
-    "label": 1,
-    "label_name": "positive",
-    "confidence": 0.9999995231628418,
-    "probabilities": {
-      "negative": 4.844122827307729e-07,
-      "positive": 0.9999995231628418
-    }
-  },
-  "AQP4-2\u677f-D10-S-3-4.jpg": {
-    "label": 1,
-    "label_name": "positive",
-    "confidence": 1.0,
-    "probabilities": {
-      "negative": 2.819769484574408e-08,
-      "positive": 1.0
-    }
-  },
-  "AQP4-2\u677f-D10-S-3-5.jpg": {
-    "label": 1,
-    "label_name": "positive",
-    "confidence": 1.0,
-    "probabilities": {
-      "negative": 2.1017864496102558e-20,
-      "positive": 1.0
-    }
-  },
-  "AQP4-2\u677f-D11-S-3-1.jpg": {
-    "label": 1,
-    "label_name": "positive",
-    "confidence": 0.9336008429527283,
-    "probabilities": {
-      "negative": 0.06639918684959412,
-      "positive": 0.9336008429527283
-    }
-  },
-  "AQP4-2\u677f-D11-S-3-2.jpg": {
-    "label": 1,
-    "label_name": "positive",
-    "confidence": 0.9949420094490051,
-    "probabilities": {
-      "negative": 0.005057912319898605,
-      "positive": 0.9949420094490051
-    }
-  },
-  "AQP4-2\u677f-D11-S-3-3.jpg": {
-    "label": 0,
-    "label_name": "negative",
-    "confidence": 0.6617122888565063,
-    "probabilities": {
-      "negative": 0.6617122888565063,
-      "positive": 0.33828771114349365
-    }
-  },
-  "AQP4-2\u677f-D11-S-3-4.jpg": {
-    "label": 1,
-    "label_name": "positive",
-    "confidence": 0.6757014393806458,
-    "probabilities": {
-      "negative": 0.32429859042167664,
-      "positive": 0.6757014393806458
-    }
-  },
-  "AQP4-2\u677f-D11-S-3-5.jpg": {
-    "label": 1,
-    "label_name": "positive",
-    "confidence": 0.99527907371521,
-    "probabilities": {
-      "negative": 0.004720985423773527,
-      "positive": 0.99527907371521
-    }
-  },
-  "AQP4-2\u677f-D4-S-3-1.jpg": {
-    "label": 1,
-    "label_name": "positive",
-    "confidence": 1.0,
-    "probabilities": {
-      "negative": 0.0,
-      "positive": 1.0
-    }
-  },
-  "AQP4-2\u677f-D4-S-3-2.jpg": {
-    "label": 1,
-    "label_name": "positive",
-    "confidence": 1.0,
-    "probabilities": {
-      "negative": 0.0,
-      "positive": 1.0
-    }
-  },
-  "AQP4-2\u677f-D4-S-3-3.jpg": {
-    "label": 1,
-    "label_name": "positive",
-    "confidence": 1.0,
-    "probabilities": {
-      "negative": 3.0644075578086044e-22,
-      "positive": 1.0
-    }
-  },
-  "AQP4-2\u677f-D4-S-3-4.jpg": {
-    "label": 1,
-    "label_name": "positive",
-    "confidence": 1.0,
-    "probabilities": {
-      "negative": 2.511573220009278e-31,
-      "positive": 1.0
-    }
-  },
-  "AQP4-2\u677f-D4-S-3-5.jpg": {
-    "label": 1,
-    "label_name": "positive",
-    "confidence": 1.0,
-    "probabilities": {
-      "negative": 0.0,
-      "positive": 1.0
-    }
-  },
-  "AQP4-2\u677f-F12-S-3-1.jpg": {
-    "label": 1,
-    "label_name": "positive",
-    "confidence": 1.0,
-    "probabilities": {
-      "negative": 2.153462361181004e-18,
-      "positive": 1.0
-    }
-  },
-  "AQP4-2\u677f-F12-S-3-2.jpg": {
-    "label": 1,
-    "label_name": "positive",
-    "confidence": 0.9985350370407104,
-    "probabilities": {
-      "negative": 0.001464962144382298,
-      "positive": 0.9985350370407104
-    }
-  },
-  "AQP4-2\u677f-F12-S-3-3.jpg": {
-    "label": 0,
-    "label_name": "negative",
-    "confidence": 0.9531645774841309,
-    "probabilities": {
-      "negative": 0.9531645774841309,
-      "positive": 0.04683542251586914
-    }
-  },
-  "AQP4-2\u677f-F12-S-3-4.jpg": {
-    "label": 1,
-    "label_name": "positive",
-    "confidence": 0.5727295875549316,
-    "probabilities": {
-      "negative": 0.42727041244506836,
-      "positive": 0.5727295875549316
-    }
-  },
-  "AQP4-2\u677f-F12-S-3-5.jpg": {
-    "label": 1,
-    "label_name": "positive",
-    "confidence": 0.9999796152114868,
-    "probabilities": {
-      "negative": 2.0403384041856043e-05,
-      "positive": 0.9999796152114868
-    }
-  },
-  "AQP4-2\u677f-G6-S-3-1.jpg": {
-    "label": 1,
-    "label_name": "positive",
-    "confidence": 0.9991720914840698,
-    "probabilities": {
-      "negative": 0.000827965559437871,
-      "positive": 0.9991720914840698
-    }
-  },
-  "AQP4-2\u677f-G6-S-3-2.jpg": {
-    "label": 1,
-    "label_name": "positive",
-    "confidence": 0.9999998807907104,
-    "probabilities": {
-      "negative": 8.102543347376923e-08,
-      "positive": 0.9999998807907104
-    }
-  },
-  "AQP4-2\u677f-G6-S-3-3.jpg": {
-    "label": 1,
-    "label_name": "positive",
-    "confidence": 0.919233500957489,
-    "probabilities": {
-      "negative": 0.08076651394367218,
-      "positive": 0.919233500957489
-    }
-  },
-  "AQP4-2\u677f-G6-S-3-4.jpg": {
-    "label": 1,
-    "label_name": "positive",
-    "confidence": 0.9738499522209167,
-    "probabilities": {
-      "negative": 0.02615000680088997,
-      "positive": 0.9738499522209167
-    }
-  },
-  "AQP4-2\u677f-G6-S-3-5.jpg": {
-    "label": 1,
-    "label_name": "positive",
-    "confidence": 0.9998821020126343,
-    "probabilities": {
-      "negative": 0.00011789605196099728,
-      "positive": 0.9998821020126343
-    }
-  },
-  "AQP4-2\u677f-H2-S-3-1.jpg": {
-    "label": 1,
-    "label_name": "positive",
-    "confidence": 1.0,
-    "probabilities": {
-      "negative": 4.694349855488137e-42,
-      "positive": 1.0
-    }
-  },
-  "AQP4-2\u677f-H2-S-3-2.jpg": {
-    "label": 1,
-    "label_name": "positive",
-    "confidence": 1.0,
-    "probabilities": {
-      "negative": 6.577824823112427e-32,
-      "positive": 1.0
-    }
-  },
-  "AQP4-2\u677f-H2-S-3-3.jpg": {
-    "label": 1,
-    "label_name": "positive",
-    "confidence": 1.0,
-    "probabilities": {
-      "negative": 3.933115132214471e-35,
-      "positive": 1.0
-    }
-  },
-  "AQP4-2\u677f-H2-S-3-4.jpg": {
-    "label": 1,
-    "label_name": "positive",
-    "confidence": 1.0,
-    "probabilities": {
-      "negative": 0.0,
-      "positive": 1.0
-    }
-  },
-  "AQP4-2\u677f-H2-S-3-5.jpg": {
-    "label": 1,
-    "label_name": "positive",
-    "confidence": 1.0,
-    "probabilities": {
-      "negative": 5.369777060539225e-37,
-      "positive": 1.0
-    }
-  },
-  "AQP4-2\u677f-H6-S-3-1.jpg": {
-    "label": 1,
-    "label_name": "positive",
-    "confidence": 1.0,
-    "probabilities": {
-      "negative": 4.5305784124316517e-10,
-      "positive": 1.0
-    }
-  },
-  "AQP4-2\u677f-H6-S-3-2.jpg": {
-    "label": 1,
-    "label_name": "positive",
-    "confidence": 1.0,
-    "probabilities": {
-      "negative": 2.9556801765877024e-15,
-      "positive": 1.0
-    }
-  },
-  "AQP4-2\u677f-H6-S-3-3.jpg": {
-    "label": 1,
-    "label_name": "positive",
-    "confidence": 1.0,
-    "probabilities": {
-      "negative": 1.011625272440142e-08,
-      "positive": 1.0
-    }
-  },
-  "AQP4-2\u677f-H6-S-3-4.jpg": {
-    "label": 1,
-    "label_name": "positive",
-    "confidence": 1.0,
-    "probabilities": {
-      "negative": 5.836800909264639e-08,
-      "positive": 1.0
-    }
-  },
-  "AQP4-2\u677f-H6-S-3-5.jpg": {
-    "label": 1,
-    "label_name": "positive",
-    "confidence": 1.0,
-    "probabilities": {
-      "negative": 1.3956351561238365e-18,
-      "positive": 1.0
-    }
-  },
-  "AQP4-2\u677f-H6-S-3.jpg": {
-    "label": 1,
-    "label_name": "positive",
-    "confidence": 1.0,
-    "probabilities": {
-      "negative": 4.5305784124316517e-10,
-      "positive": 1.0
-    }
-  },
-  "AQP4-2\u677f-H7-S-3-1.jpg": {
-    "label": 0,
-    "label_name": "negative",
-    "confidence": 0.9607564806938171,
-    "probabilities": {
-      "negative": 0.9607564806938171,
-      "positive": 0.03924346715211868
-    }
-  },
-  "AQP4-2\u677f-H7-S-3-2.jpg": {
-    "label": 0,
-    "label_name": "negative",
-    "confidence": 0.9629916548728943,
-    "probabilities": {
-      "negative": 0.9629916548728943,
-      "positive": 0.03700833395123482
-    }
-  },
-  "AQP4-2\u677f-H7-S-3-3.jpg": {
-    "label": 0,
-    "label_name": "negative",
-    "confidence": 0.7227576971054077,
-    "probabilities": {
-      "negative": 0.7227576971054077,
-      "positive": 0.2772422730922699
-    }
-  },
-  "AQP4-2\u677f-H7-S-3-4.jpg": {
-    "label": 1,
-    "label_name": "positive",
-    "confidence": 0.8424910306930542,
-    "probabilities": {
-      "negative": 0.1575089693069458,
-      "positive": 0.8424910306930542
-    }
-  },
-  "AQP4-2\u677f-H7-S-3-5.jpg": {
-    "label": 0,
-    "label_name": "negative",
-    "confidence": 0.9362742304801941,
-    "probabilities": {
-      "negative": 0.9362742304801941,
-      "positive": 0.06372571736574173
-    }
-  },
-  "AQP4-\u5f20\u71d5-S-3.jpg": {
-    "label": 1,
-    "label_name": "positive",
-    "confidence": 0.9992892742156982,
-    "probabilities": {
-      "negative": 0.0007106734556145966,
-      "positive": 0.9992892742156982
-    }
-  },
-  "AQP4-\u90dd\u9501\u73b2-S-3.jpg": {
-    "label": 1,
-    "label_name": "positive",
-    "confidence": 0.9950070381164551,
-    "probabilities": {
-      "negative": 0.004992930684238672,
-      "positive": 0.9950070381164551
-    }
-  },
-  "AQP4-\u9634\u6027-3.jpg": {
-    "label": 1,
-    "label_name": "positive",
-    "confidence": 0.7648648023605347,
-    "probabilities": {
-      "negative": 0.23513522744178772,
-      "positive": 0.7648648023605347
-    }
-  },
-  "AQP4-\u9648\u77f3\u7a0e-S-3.jpg": {
-    "label": 1,
-    "label_name": "positive",
-    "confidence": 0.993516206741333,
-    "probabilities": {
-      "negative": 0.006483752280473709,
-      "positive": 0.993516206741333
-    }
-  },
-  "testn.jpg": {
-    "label": 1,
-    "label_name": "positive",
-    "confidence": 1.0,
-    "probabilities": {
-      "negative": 8.703724071641743e-35,
-      "positive": 1.0
+      "negative": 0.3997810184955597,
+      "positive": 0.6002190113067627
     }
   },
   "testp.jpg": {
     "label": 1,
     "label_name": "positive",
-    "confidence": 1.0,
+    "confidence": 0.9944954514503479,
     "probabilities": {
-      "negative": 4.777549911239021e-09,
-      "positive": 1.0
+      "negative": 0.005504542030394077,
+      "positive": 0.9944954514503479
+    }
+  },
+  "AQP4-2\udcb0\udce5-F12-S-3-3.jpg": {
+    "label": 0,
+    "label_name": "negative",
+    "confidence": 0.6104166507720947,
+    "probabilities": {
+      "negative": 0.6104166507720947,
+      "positive": 0.3895833492279053
+    }
+  },
+  "AQP4-2\udcb0\udce5-C4-S-3-3.jpg": {
+    "label": 1,
+    "label_name": "positive",
+    "confidence": 0.9860633015632629,
+    "probabilities": {
+      "negative": 0.013936754316091537,
+      "positive": 0.9860633015632629
+    }
+  },
+  "AQP4-\udcb3\udcc2\u02af\u02f0-S-3.jpg": {
+    "label": 1,
+    "label_name": "positive",
+    "confidence": 0.9333562254905701,
+    "probabilities": {
+      "negative": 0.06664377450942993,
+      "positive": 0.9333562254905701
+    }
+  },
+  "AQP4-2\udcb0\udce5-B2-S-3-4.jpg": {
+    "label": 1,
+    "label_name": "positive",
+    "confidence": 0.9246031045913696,
+    "probabilities": {
+      "negative": 0.07539690285921097,
+      "positive": 0.9246031045913696
+    }
+  },
+  "AQP4-2\udcb0\udce5-D4-S-3-4.jpg": {
+    "label": 0,
+    "label_name": "negative",
+    "confidence": 0.5804896354675293,
+    "probabilities": {
+      "negative": 0.5804896354675293,
+      "positive": 0.4195103347301483
+    }
+  },
+  "AQP4-2\udcb0\udce5-D4-S-3-2.jpg": {
+    "label": 0,
+    "label_name": "negative",
+    "confidence": 0.7075995206832886,
+    "probabilities": {
+      "negative": 0.7075995206832886,
+      "positive": 0.2924005091190338
+    }
+  },
+  "AQP4-2\udcb0\udce5-H2-S-3-1.jpg": {
+    "label": 0,
+    "label_name": "negative",
+    "confidence": 0.7053597569465637,
+    "probabilities": {
+      "negative": 0.7053597569465637,
+      "positive": 0.2946402132511139
+    }
+  },
+  "AQP4-1\udca3\udcba320-3.jpg": {
+    "label": 0,
+    "label_name": "negative",
+    "confidence": 0.594946026802063,
+    "probabilities": {
+      "negative": 0.594946026802063,
+      "positive": 0.4050540030002594
+    }
+  },
+  "AQP4-2\udcb0\udce5-F12-S-3-2.jpg": {
+    "label": 1,
+    "label_name": "positive",
+    "confidence": 0.7608019113540649,
+    "probabilities": {
+      "negative": 0.23919805884361267,
+      "positive": 0.7608019113540649
+    }
+  },
+  "AQP4-2\udcb0\udce5-D10-S-3-2.jpg": {
+    "label": 0,
+    "label_name": "negative",
+    "confidence": 0.6879971623420715,
+    "probabilities": {
+      "negative": 0.6879971623420715,
+      "positive": 0.3120027780532837
+    }
+  },
+  "AQP4-2\udcb0\udce5-F12-S-3-1.jpg": {
+    "label": 1,
+    "label_name": "positive",
+    "confidence": 0.7806546688079834,
+    "probabilities": {
+      "negative": 0.21934537589550018,
+      "positive": 0.7806546688079834
+    }
+  },
+  "AQP4-2\udcb0\udce5-G6-S-3-2.jpg": {
+    "label": 0,
+    "label_name": "negative",
+    "confidence": 0.5628952980041504,
+    "probabilities": {
+      "negative": 0.5628952980041504,
+      "positive": 0.437104731798172
+    }
+  },
+  "AQP4-2\udcb0\udce5-C4-S-3-5.jpg": {
+    "label": 1,
+    "label_name": "positive",
+    "confidence": 0.8726434707641602,
+    "probabilities": {
+      "negative": 0.1273566037416458,
+      "positive": 0.8726434707641602
+    }
+  },
+  "testn.jpg": {
+    "label": 0,
+    "label_name": "negative",
+    "confidence": 0.6126908659934998,
+    "probabilities": {
+      "negative": 0.6126908659934998,
+      "positive": 0.38730910420417786
+    }
+  },
+  "AQP4-2\udcb0\udce5-H6-S-3.jpg": {
+    "label": 0,
+    "label_name": "negative",
+    "confidence": 0.6325660943984985,
+    "probabilities": {
+      "negative": 0.6325660943984985,
+      "positive": 0.36743396520614624
+    }
+  },
+  "AQP4-1\udca3\udcba10-3.jpg": {
+    "label": 1,
+    "label_name": "positive",
+    "confidence": 0.8964653611183167,
+    "probabilities": {
+      "negative": 0.10353461652994156,
+      "positive": 0.8964653611183167
+    }
+  },
+  "AQP4-2\udcb0\udce5-B2-S-3-2.jpg": {
+    "label": 1,
+    "label_name": "positive",
+    "confidence": 0.8925122022628784,
+    "probabilities": {
+      "negative": 0.10748783499002457,
+      "positive": 0.8925122022628784
+    }
+  },
+  "AQP4-2\udcb0\udce5-H6-S-3-3.jpg": {
+    "label": 0,
+    "label_name": "negative",
+    "confidence": 0.5806136131286621,
+    "probabilities": {
+      "negative": 0.5806136131286621,
+      "positive": 0.4193863570690155
+    }
+  },
+  "AQP4-2\udcb0\udce5-F12-S-3-5.jpg": {
+    "label": 0,
+    "label_name": "negative",
+    "confidence": 0.5195757746696472,
+    "probabilities": {
+      "negative": 0.5195757746696472,
+      "positive": 0.4804241955280304
+    }
+  },
+  "AQP4-2\udcb0\udce5-B2-S-3-5.jpg": {
+    "label": 1,
+    "label_name": "positive",
+    "confidence": 0.9550777077674866,
+    "probabilities": {
+      "negative": 0.04492228478193283,
+      "positive": 0.9550777077674866
+    }
+  },
+  "AQP4-2\udcb0\udce5-H7-S-3-5.jpg": {
+    "label": 0,
+    "label_name": "negative",
+    "confidence": 0.6688793897628784,
+    "probabilities": {
+      "negative": 0.6688793897628784,
+      "positive": 0.3311205804347992
+    }
+  },
+  "AQP4-1\udca3\udcba32-3.jpg": {
+    "label": 0,
+    "label_name": "negative",
+    "confidence": 0.6132933497428894,
+    "probabilities": {
+      "negative": 0.6132933497428894,
+      "positive": 0.3867066502571106
+    }
+  },
+  "AQP4-2\udcb0\udce5-H7-S-3-1.jpg": {
+    "label": 0,
+    "label_name": "negative",
+    "confidence": 0.7299537062644958,
+    "probabilities": {
+      "negative": 0.7299537062644958,
+      "positive": 0.27004632353782654
+    }
+  },
+  "AQP4-2\udcb0\udce5-H6-S-3-2.jpg": {
+    "label": 0,
+    "label_name": "negative",
+    "confidence": 0.7027378678321838,
+    "probabilities": {
+      "negative": 0.7027378678321838,
+      "positive": 0.2972621023654938
+    }
+  },
+  "AQP4-2\udcb0\udce5-H7-S-3-3.jpg": {
+    "label": 0,
+    "label_name": "negative",
+    "confidence": 0.6098151206970215,
+    "probabilities": {
+      "negative": 0.6098151206970215,
+      "positive": 0.39018484950065613
+    }
+  },
+  "AQP4-2\udcb0\udce5-D10-S-3-5.jpg": {
+    "label": 0,
+    "label_name": "negative",
+    "confidence": 0.7167650461196899,
+    "probabilities": {
+      "negative": 0.7167650461196899,
+      "positive": 0.28323495388031006
+    }
+  },
+  "AQP4-2\udcb0\udce5-C4-S-3-2.jpg": {
+    "label": 1,
+    "label_name": "positive",
+    "confidence": 0.9683294296264648,
+    "probabilities": {
+      "negative": 0.03167056664824486,
+      "positive": 0.9683294296264648
+    }
+  },
+  "AQP4-2\udcb0\udce5-C4-S-3-1.jpg": {
+    "label": 1,
+    "label_name": "positive",
+    "confidence": 0.9093947410583496,
+    "probabilities": {
+      "negative": 0.0906052365899086,
+      "positive": 0.9093947410583496
+    }
+  },
+  "AQP4-\udcd5\udcc5\udcd1\udce0-S-3.jpg": {
+    "label": 0,
+    "label_name": "negative",
+    "confidence": 0.5869423151016235,
+    "probabilities": {
+      "negative": 0.5869423151016235,
+      "positive": 0.41305771470069885
+    }
+  },
+  "AQP4-\udcba\udcc2\udccb\udcf8\udcc1\udce1-S-3.jpg": {
+    "label": 1,
+    "label_name": "positive",
+    "confidence": 0.6756510138511658,
+    "probabilities": {
+      "negative": 0.32434895634651184,
+      "positive": 0.6756510138511658
+    }
+  },
+  "AQP4-2\udcb0\udce5-H2-S-3-4.jpg": {
+    "label": 0,
+    "label_name": "negative",
+    "confidence": 0.6203325390815735,
+    "probabilities": {
+      "negative": 0.6203325390815735,
+      "positive": 0.3796674311161041
+    }
+  },
+  "AQP4-2\udcb0\udce5-H7-S-3-2.jpg": {
+    "label": 0,
+    "label_name": "negative",
+    "confidence": 0.670697033405304,
+    "probabilities": {
+      "negative": 0.670697033405304,
+      "positive": 0.32930296659469604
+    }
+  },
+  "AQP4-2\udcb0\udce5-C4-S-3-4.jpg": {
+    "label": 1,
+    "label_name": "positive",
+    "confidence": 0.9676930904388428,
+    "probabilities": {
+      "negative": 0.0323069803416729,
+      "positive": 0.9676930904388428
+    }
+  },
+  "AQP4-2\udcb0\udce5-G6-S-3-3.jpg": {
+    "label": 1,
+    "label_name": "positive",
+    "confidence": 0.8004477620124817,
+    "probabilities": {
+      "negative": 0.1995522379875183,
+      "positive": 0.8004477620124817
+    }
+  },
+  "AQP4-2\udcb0\udce5-D10-S-3-4.jpg": {
+    "label": 0,
+    "label_name": "negative",
+    "confidence": 0.7152791619300842,
+    "probabilities": {
+      "negative": 0.7152791619300842,
+      "positive": 0.2847208082675934
+    }
+  },
+  "AQP4-2\udcb0\udce5-H6-S-3-1.jpg": {
+    "label": 0,
+    "label_name": "negative",
+    "confidence": 0.6325660943984985,
+    "probabilities": {
+      "negative": 0.6325660943984985,
+      "positive": 0.36743396520614624
+    }
+  },
+  "AQP4-2\udcb0\udce5-D11-S-3-2.jpg": {
+    "label": 1,
+    "label_name": "positive",
+    "confidence": 0.7717821002006531,
+    "probabilities": {
+      "negative": 0.22821789979934692,
+      "positive": 0.7717821002006531
+    }
+  },
+  "AQP4-2\udcb0\udce5-D11-S-3-5.jpg": {
+    "label": 1,
+    "label_name": "positive",
+    "confidence": 0.6552779674530029,
+    "probabilities": {
+      "negative": 0.3447220027446747,
+      "positive": 0.6552779674530029
+    }
+  },
+  "AQP4-2\udcb0\udce5-D4-S-3-3.jpg": {
+    "label": 0,
+    "label_name": "negative",
+    "confidence": 0.723283052444458,
+    "probabilities": {
+      "negative": 0.723283052444458,
+      "positive": 0.2767169773578644
+    }
+  },
+  "AQP4-2\udcb0\udce5-H2-S-3-5.jpg": {
+    "label": 0,
+    "label_name": "negative",
+    "confidence": 0.6907947659492493,
+    "probabilities": {
+      "negative": 0.6907947659492493,
+      "positive": 0.3092052638530731
+    }
+  },
+  "AQP4-2\udcb0\udce5-G6-S-3-1.jpg": {
+    "label": 0,
+    "label_name": "negative",
+    "confidence": 0.5149151682853699,
+    "probabilities": {
+      "negative": 0.5149151682853699,
+      "positive": 0.4850848317146301
+    }
+  },
+  "AQP4-2\udcb0\udce5-H2-S-3-2.jpg": {
+    "label": 0,
+    "label_name": "negative",
+    "confidence": 0.6546728014945984,
+    "probabilities": {
+      "negative": 0.6546728014945984,
+      "positive": 0.3453271687030792
+    }
+  },
+  "AQP4-2\udcb0\udce5-H7-S-3-4.jpg": {
+    "label": 0,
+    "label_name": "negative",
+    "confidence": 0.6333861351013184,
+    "probabilities": {
+      "negative": 0.6333861351013184,
+      "positive": 0.36661383509635925
+    }
+  },
+  "AQP4-2\udcb0\udce5-H6-S-3-5.jpg": {
+    "label": 0,
+    "label_name": "negative",
+    "confidence": 0.6545002460479736,
+    "probabilities": {
+      "negative": 0.6545002460479736,
+      "positive": 0.34549975395202637
+    }
+  },
+  "AQP4-2\udcb0\udce5-H2-S-3-3.jpg": {
+    "label": 0,
+    "label_name": "negative",
+    "confidence": 0.6429661512374878,
+    "probabilities": {
+      "negative": 0.6429661512374878,
+      "positive": 0.357033908367157
+    }
+  },
+  "AQP4-2\udcb0\udce5-H6-S-3-4.jpg": {
+    "label": 0,
+    "label_name": "negative",
+    "confidence": 0.6605172753334045,
+    "probabilities": {
+      "negative": 0.6605172753334045,
+      "positive": 0.3394826650619507
+    }
+  },
+  "AQP4-2\udcb0\udce5-D11-S-3-1.jpg": {
+    "label": 1,
+    "label_name": "positive",
+    "confidence": 0.6488813161849976,
+    "probabilities": {
+      "negative": 0.35111862421035767,
+      "positive": 0.6488813161849976
+    }
+  },
+  "AQP4-2\udcb0\udce5-D4-S-3-1.jpg": {
+    "label": 0,
+    "label_name": "negative",
+    "confidence": 0.7025219798088074,
+    "probabilities": {
+      "negative": 0.7025219798088074,
+      "positive": 0.2974780201911926
+    }
+  },
+  "AQP4-2\udcb0\udce5-D4-S-3-5.jpg": {
+    "label": 0,
+    "label_name": "negative",
+    "confidence": 0.7079330086708069,
+    "probabilities": {
+      "negative": 0.7079330086708069,
+      "positive": 0.2920670509338379
+    }
+  },
+  "AQP4-2\udcb0\udce5-D11-S-3-4.jpg": {
+    "label": 1,
+    "label_name": "positive",
+    "confidence": 0.6840187907218933,
+    "probabilities": {
+      "negative": 0.3159811794757843,
+      "positive": 0.6840187907218933
+    }
+  },
+  "AQP4-2\udcb0\udce5-D10-S-3-1.jpg": {
+    "label": 0,
+    "label_name": "negative",
+    "confidence": 0.6761151552200317,
+    "probabilities": {
+      "negative": 0.6761151552200317,
+      "positive": 0.32388490438461304
     }
   }
 }

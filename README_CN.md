@@ -79,12 +79,20 @@ python train.py --config config.yaml --data-dir data --device cuda
 
 # 或使用MIL模型训练（在config.yaml中取消注释：mil.enable: true）
 python train.py --config config.yaml --data-dir data --device cuda
+
+# 多卡训练（推荐）
+torchrun --nproc_per_node=5 train.py --gpus 1,2,3,5,6 --config config.yaml --data-dir data --device cuda --distributed
 ```
 
 ### 3. 评估模型
 
 ```bash
 python evaluate.py --config config.yaml \
+                   --model outputs/checkpoints/best_model.pth \
+                   --data-dir data
+
+# 指定GPU（示例：仅使用0号卡）
+CUDA_VISIBLE_DEVICES=1 python evaluate.py --config config.yaml \
                    --model outputs/checkpoints/best_model.pth \
                    --data-dir data
 ```
@@ -96,11 +104,19 @@ python evaluate.py --config config.yaml \
 python inference.py --config config.yaml \
                    --model outputs/checkpoints/best_model.pth \
                    --image path/to/image.jpg
+
+# 指定GPU（示例：仅使用1号卡）
+CUDA_VISIBLE_DEVICES=1 python inference.py --config config.yaml \
+                   --model outputs/checkpoints/best_model.pth \
+                   --image path/to/image.jpg
 ```
 
 **批量预测：**
 ```bash
 python inference.py --config config.yaml --model outputs/checkpoints/best_model.pth --image-dir test_images --output results.json
+
+# 指定GPU（示例：使用2号和3号卡，但推理默认只用第一个可见卡）
+CUDA_VISIBLE_DEVICES=2 python inference.py --config config.yaml --model outputs/checkpoints/best_model.pth --image-dir test_images --output results.json
 ```
 
 ## 配置说明
