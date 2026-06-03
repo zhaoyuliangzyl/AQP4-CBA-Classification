@@ -46,18 +46,6 @@ class Predictor:
             A.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
             ToTensorV2(),
         ])
-
-        inference_config = self.config.get('inference', {})
-        self.confidence_threshold = float(inference_config.get('confidence_threshold', 0.5))
-        threshold_path = inference_config.get('threshold_path', 'outputs/evaluation/best_threshold.json')
-        if threshold_path and os.path.exists(threshold_path):
-            with open(threshold_path, 'r', encoding='utf-8') as f:
-                threshold_payload = yaml.safe_load(f)
-            if isinstance(threshold_payload, dict) and 'threshold' in threshold_payload:
-                self.confidence_threshold = float(threshold_payload['threshold'])
-                print(f"Loaded threshold from {threshold_path}: {self.confidence_threshold:.3f}")
-            else:
-                print(f"Threshold file missing 'threshold' key: {threshold_path}")
     
     @torch.no_grad()
     def predict(self, image_path: str) -> Dict:
@@ -76,15 +64,13 @@ class Predictor:
         
         logits = logits.to(self.device)
         probs = torch.softmax(logits, dim=1)
-        positive_prob = probs[0, 1].item()
-        pred_label = 1 if positive_prob >= self.confidence_threshold else 0
-        confidence = positive_prob if pred_label == 1 else probs[0, 0].item()
+        pred_label = torch.argmax(logits, dim=1).item()
+        confidence = probs[0, pred_label].item()
         
         return {
             'label': pred_label,
             'label_name': 'positive' if pred_label == 1 else 'negative',
             'confidence': confidence,
-            'threshold': self.confidence_threshold,
             'probabilities': {
                 'negative': probs[0, 0].item(),
                 'positive': probs[0, 1].item()
