@@ -84,6 +84,8 @@ validation:
   eval_interval: 5  # Evaluate every N epochs
   early_stopping_patience: 20
   early_stopping_metric: "val_auc"  # Options: val_loss, val_auc, val_f1
+  threshold_metric: "f1"  # Options: f1, youden
+  threshold_search_steps: 101
 
 # Multiple Instance Learning (MIL)
 mil:
@@ -111,3 +113,4 @@ logging:
 inference:
   model_path: "outputs/checkpoints/best_model.pth"
   confidence_threshold: 0.5
+  threshold_path: "outputs/evaluation/best_threshold.json"
